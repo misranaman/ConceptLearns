@@ -1,4 +1,4 @@
-package solid.isf;
+package solid.isp;
 
 public class Paytm implements UpiPayment{
 
