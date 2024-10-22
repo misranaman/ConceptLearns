@@ -1,4 +1,5 @@
 package interview_asks;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -10,7 +11,7 @@ public class Zepto {
 
 	public static void main(String[] args) {
 
-		solution("ababjkiabababababokiababababababaxcvvbvababvababxab", "ab");
+		solution("abXababXabababXababababXabab", "ab");
 		// String sol2Res = solution2("I Love Zepto");
 		// System.out.println(sol2Res);
 
@@ -57,7 +58,6 @@ public class Zepto {
 			res.remove(res.size() - 1);
 		}
 		System.out.println(res);
-
 	}
 
 	// String s="I Love Zepto" //o tpeZ evoLI
