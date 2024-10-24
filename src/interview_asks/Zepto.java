@@ -14,7 +14,7 @@ public class Zepto {
 		//solution("abXababXabababXababababXababXab", "ab");
 		// String sol2Res = solution2("I Love Zepto");
 		// System.out.println(sol2Res);
-		findTargetOccurrences("abXababXabababXababababXababXab", "ab");
+		findTargetOccurrences("abXababXabababXababababXababXabab", "ab");
 
 	}
 
