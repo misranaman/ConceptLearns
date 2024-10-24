@@ -11,9 +11,10 @@ public class Zepto {
 
 	public static void main(String[] args) {
 
-		solution("abXababXabababXababababXababXab", "ab");
+		//solution("abXababXabababXababababXababXab", "ab");
 		// String sol2Res = solution2("I Love Zepto");
 		// System.out.println(sol2Res);
+		findTargetOccurrences("abXababXabababXababababXababXab", "ab");
 
 	}
 
@@ -67,6 +68,33 @@ public class Zepto {
 		}
 		System.out.println(res);
 	}
+	
+	  public static List<Integer> findTargetOccurrences(String s, String target) {
+	        List<Integer> result = new ArrayList<>();
+	        int count = 0;
+	        int i = 0;
+
+	        while (i < s.length()) {
+	            if (s.startsWith(target, i)) {
+	                count++;
+	                i += target.length();
+	            } else {
+	                if (count > 0) {
+	                    result.add(count);
+	                    count = 0;
+	                }
+	                i++;
+	            }
+	        }
+
+	        if (count > 0) {
+	            result.add(count);
+	        }
+	        
+	        System.out.println(result);
+	        return result;
+	    }
+	
 
 	// String s="I Love Zepto" //o tpeZ evoLI
 	public static String solution2(String str) {
