@@ -18,6 +18,8 @@ public class MergeOverlappingIntervals {
 		List<int[]> resList = mergeOverlap(arr);
 		System.out.println();
 
+		resList = mergeOverlapMySol(arr);
+
 		System.out.println("------result-----");
 
 		for (int x[] : resList) {
@@ -55,6 +57,26 @@ public class MergeOverlappingIntervals {
 
 		return result;
 
+	}
+
+	private static List<int[]> mergeOverlapMySol(int arr[][]) {
+
+		List<int[]> res = new ArrayList<int[]>();
+		int n = arr.length;
+		int m = arr[0].length;
+		for (int i = 1; i < n; i++) {
+			int[] curr = arr[i];
+			int[] prev = arr[i - 1];
+
+			if (curr[1] > prev[1] &&
+					curr[0] < prev[1]) {
+				res.add(new int[] { prev[0], curr[1] });
+			} else {
+				res.add(curr);
+			}
+		}
+
+		return res;
 	}
 
 	private static void printDDArray(int[][] arr, String message) {
