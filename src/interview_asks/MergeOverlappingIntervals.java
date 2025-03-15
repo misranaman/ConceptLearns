@@ -18,7 +18,7 @@ public class MergeOverlappingIntervals {
 		List<int[]> resList = mergeOverlap(arr);
 		System.out.println();
 
-		resList = mergeOverlapMySol(arr);
+		resList = mergeOverlap(arr);
 
 		System.out.println("------result-----");
 
