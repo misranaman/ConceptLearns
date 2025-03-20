@@ -11,14 +11,10 @@ public class Zepto {
 
 	public static void main(String[] args) {
 
-<<<<<<< HEAD
 		// solution("abXababXabababXababababXabab", "ab");
-=======
 		// solution("abXababXabababXababababXababXab", "ab");
->>>>>>> stash
 		// String sol2Res = solution2("I Love Zepto");
 		// System.out.println(sol2Res);
-		countSubstringInString("abXababXabababXababababXabab", "ab");
 		findTargetOccurrences("abXababXabababXababababXababXabab", "ab");
 
 	}
@@ -54,7 +50,7 @@ public class Zepto {
 
 		// special case for handling last match
 		if (counter == 0 && str.substring(str.length() - m)
-			.equals(tar)) {
+				.equals(tar)) {
 			counter++;
 			res.add(counter);
 		}
@@ -62,8 +58,8 @@ public class Zepto {
 		// if both of above case are true we have to remove the last element as it will
 		// be duplicate
 		res = res.stream()
-			.filter(r -> r != 0)
-			.collect(Collectors.toList());
+				.filter(r -> r != 0)
+				.collect(Collectors.toList());
 		int sum = 0;
 		for (int x : res)
 			sum = sum + x;
@@ -99,40 +95,6 @@ public class Zepto {
 		System.out.println(result);
 		return result;
 	}
-<<<<<<< HEAD
-
-	public static List<Integer> countSubstringInString(String str, String substring) {
-
-		List<Integer> result = new ArrayList<>();
-
-		int n = str.length();
-		int m = substring.length();
-		int counter = 0;
-		int i = 0;
-
-		while (i < str.length()) {
-			if (str.startsWith(substring, i)) {
-				counter++;
-				i = i + m;
-			} else {
-				if (counter > 0) {
-					result.add(counter);
-					counter = 0;
-				}
-				i++;
-			}
-
-		}
-
-		if (counter > 0)
-			result.add(counter);
-
-		System.out.println(result);
-
-		return result;
-	}
-=======
->>>>>>> stash
 
 	// String s="I Love Zepto" //o tpeZ evoLI
 	public static String solution2(String str) {
