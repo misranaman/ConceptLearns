@@ -1,15 +1,15 @@
 package solid.ocp;
 
-public class MobileNotificationService implements NotificationService{
+public class MobileNotificationService implements NotificationService {
 
 	@Override
 	public void sendOtp(String medium) {
-		//custom logic
+		// custom logic
 	}
 
 	@Override
 	public void sendTransactionReport() {
-		//custom logic	
+		// custom logic
 	}
 
 }

@@ -1,0 +1,18 @@
+
+/* The single responsibility principle states that a class should only perform one action.
+	 * For example if there are Loan services, Print services and Notification services,
+	 * These should be written in separate classes*/
+	 
+/* OPEN CLOSE PRINCIPLE states that according to new requirement the module should be open for extension but closed for modification.
+	 * For example a notification interface can be implemented to different notification classes*/
+	 
+/*LISKOVS SUBSTITUTION PRINCIPLE
+	 * It applies to inheritance in such a way that the derived classes must be
+	 * completely substitutable for their base classes. Example if A is extending B
+	 * then we should be able to replace B with A without interrupting the current
+	 * behaviour of the program
+	 */
+
+/*INTERFACE SEGREGATION PRINCIPLE. Split large interfaces in smaller ones to avoid unused implementation*/
+
+/*Dependency Injection Principle. Creating objects on runtime. Credit Card example.

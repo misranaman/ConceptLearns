@@ -11,7 +11,11 @@ public class Zepto {
 
 	public static void main(String[] args) {
 
+<<<<<<< HEAD
 		// solution("abXababXabababXababababXabab", "ab");
+=======
+		// solution("abXababXabababXababababXababXab", "ab");
+>>>>>>> stash
 		// String sol2Res = solution2("I Love Zepto");
 		// System.out.println(sol2Res);
 		countSubstringInString("abXababXabababXababababXabab", "ab");
@@ -95,6 +99,7 @@ public class Zepto {
 		System.out.println(result);
 		return result;
 	}
+<<<<<<< HEAD
 
 	public static List<Integer> countSubstringInString(String str, String substring) {
 
@@ -126,6 +131,8 @@ public class Zepto {
 
 		return result;
 	}
+=======
+>>>>>>> stash
 
 	// String s="I Love Zepto" //o tpeZ evoLI
 	public static String solution2(String str) {

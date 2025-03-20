@@ -8,12 +8,7 @@ public class MergeOverlappingIntervals {
 
 	public static void main(String[] args) {
 
-		int arr[][] = {
-				{ 1, 3 },
-				{ 2, 4 },
-				{ 6, 8 },
-				{ 9, 10 }
-		};
+		int arr[][] = { { 1, 3 }, { 2, 4 }, { 6, 8 }, { 9, 10 } };
 
 		List<int[]> resList = mergeOverlap(arr);
 		System.out.println();
@@ -50,7 +45,7 @@ public class MergeOverlappingIntervals {
 			if (curr[0] < last[1]) {
 				last[1] = Math.max(curr[1], last[1]);
 			} else {
-				result.add(new int[] { curr[0], curr[1] });
+				result.add(curr);
 			}
 
 		}
