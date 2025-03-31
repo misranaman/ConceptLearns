@@ -1,4 +1,4 @@
-package interview_asks;
+package interview_asks.companies;
 
 public class StockSellAndBuy {
 

@@ -1,4 +1,4 @@
-package interview_asks;
+package interview_asks.companies;
 
 import java.util.ArrayList;
 import java.util.List;
