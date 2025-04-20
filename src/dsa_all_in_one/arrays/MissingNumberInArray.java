@@ -1,4 +1,4 @@
-package dsa_all_in_one;
+package dsa_all_in_one.arrays;
 
 //Find the missing number in an array of 1 to N.
 

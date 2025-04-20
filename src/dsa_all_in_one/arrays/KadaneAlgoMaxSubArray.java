@@ -1,4 +1,4 @@
-package dsa_all_in_one;
+package dsa_all_in_one.arrays;
 
 public class KadaneAlgoMaxSubArray {
 
