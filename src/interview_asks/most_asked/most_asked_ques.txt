@@ -1,0 +1,246 @@
+1. Arrays
+Find the missing number in an array of 1 to N.
+
+Kadane’s Algorithm (Maximum Subarray Sum).
+
+Two Sum Problem.
+
+Find the intersection and union of two arrays.
+
+Merge two sorted arrays without extra space.
+
+Rotate an array by K positions.
+
+Find the majority element (Moore’s Voting Algorithm).
+
+Best time to buy and sell stocks.
+
+Subarray with a given sum (Sliding Window).
+
+Next permutation of an array.
+
+2. Strings
+Reverse a string without using extra space.
+
+Check if a string is a palindrome.
+
+Longest Substring Without Repeating Characters.
+
+Find the first non-repeating character in a string.
+
+Check if two strings are anagrams.
+
+Implement strstr() (Find a substring in a string).
+
+Count and say problem.
+
+Longest Palindromic Substring.
+
+Valid Parentheses.
+
+Group anagrams together.
+
+3. Linked List
+Reverse a linked list (Iterative & Recursive).
+
+Detect and remove a loop in a linked list.
+
+Find the middle of a linked list.
+
+Merge two sorted linked lists.
+
+Intersection point of two linked lists.
+
+Delete Nth node from the end of the list.
+
+Flatten a linked list.
+
+Add two numbers represented by linked lists.
+
+Clone a linked list with random pointers.
+
+Reverse nodes in K-group.
+
+4. Stacks and Queues
+Implement stack using an array and linked list.
+
+Implement a queue using stacks.
+
+Next Greater Element.
+
+Valid Parentheses.
+
+Largest Rectangle in Histogram.
+
+LRU Cache Implementation.
+
+Sliding Window Maximum.
+
+Implement Min Stack.
+
+Circular Queue implementation.
+
+Evaluate Reverse Polish Notation.
+
+5. Recursion & Backtracking
+Print all subsets of a given set.
+
+Generate all permutations of a string/array.
+
+Rat in a maze problem.
+
+N-Queens problem.
+
+Sudoku Solver.
+
+Word Break Problem.
+
+Combination Sum problem.
+
+Generate Parentheses.
+
+Print all possible paths in a matrix.
+
+K-th permutation sequence.
+
+6. Sorting & Searching
+Binary Search and its variations.
+
+Merge Sort & Quick Sort.
+
+Find K-th largest/smallest element in an array.
+
+Search in a rotated sorted array.
+
+Find the peak element in an array.
+
+Count inversions in an array.
+
+Median of two sorted arrays.
+
+Find missing and duplicate numbers.
+
+Painter's Partition Problem.
+
+Aggressive Cows Problem.
+
+7. Binary Trees & Binary Search Trees (BST)
+Inorder, Preorder, and Postorder Traversals.
+
+Level Order Traversal.
+
+Check if a tree is balanced.
+
+Lowest Common Ancestor (LCA).
+
+Check if two trees are identical.
+
+Diameter of a binary tree.
+
+Convert sorted array to BST.
+
+Serialize and Deserialize a binary tree.
+
+Kth smallest and largest element in BST.
+
+Validate if a binary tree is a BST.
+
+8. Graphs
+BFS and DFS traversal.
+
+Detect cycle in a graph (Directed & Undirected).
+
+Topological Sorting.
+
+Dijkstra’s Algorithm (Shortest Path).
+
+Bellman-Ford Algorithm.
+
+Floyd Warshall Algorithm.
+
+Prim’s and Kruskal’s Algorithm (Minimum Spanning Tree).
+
+Word Ladder Problem.
+
+Number of Islands.
+
+Find Bridges and Articulation Points.
+
+9. Dynamic Programming (DP)
+0/1 Knapsack Problem.
+
+Longest Common Subsequence.
+
+Longest Palindromic Subsequence.
+
+Coin Change Problem.
+
+House Robber Problem.
+
+Edit Distance Problem.
+
+Egg Dropping Problem.
+
+Rod Cutting Problem.
+
+Matrix Chain Multiplication.
+
+Wildcard Matching.
+
+10. Bit Manipulation
+Check if a number is a power of 2.
+
+Count set bits in an integer.
+
+Find the single non-repeating element in an array.
+
+XOR of all elements in an array.
+
+Swap two numbers without using a third variable.
+
+Find the missing number using XOR.
+
+Divide two integers without using division.
+
+Power of a number using Bit Manipulation.
+
+Find the rightmost different bit in two numbers.
+
+Detect if a number is even or odd.
+
+11. Tries (Prefix Tree)
+Implement Trie (Insert, Search, Delete).
+
+Auto-complete feature using Trie.
+
+Longest Common Prefix.
+
+Word Search in a Grid.
+
+Count words with a given prefix.
+
+Find the shortest unique prefix.
+
+Implement a Spell Checker.
+
+12. Heap/Priority Queue
+Find the Kth largest/smallest element in an array.
+
+Merge K sorted lists.
+
+Find the median in a data stream.
+
+Top K frequent elements.
+
+K Closest Points to the Origin.
+
+Connect ropes to minimize cost.
+
+Find the smallest range in K sorted lists.
+
+Sliding Window Maximum using Heap.
+
+Task Scheduler Problem.
+
+Reorganize String.
+

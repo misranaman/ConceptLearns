@@ -10,19 +10,27 @@ public class SubsString {
 
 	public static void main(String[] args) {
 
-		// getAllSubsStrings("abcdef");
+		getAllSubsStrings("str");
 
-		longestNonRepeatingSubsString("abcdabcdg");
+		// longestNonRepeatingSubsString("abcdabcdg");
 
 	}
 
 	public static void getAllSubsStrings(String str) {
+
+		// number of substrings in a string is (n*(n+)/2)
+		// this is similar to number of sub arrays in a an array
+
 		int n = str.length();
+		int c = 0;
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j <= n; j++) {
 				System.out.println(str.substring(i, j));
+				c++;
 			}
 		}
+
+		System.out.println("total subs-strings of " + str + "(" + str.length() + ")" + " is " + c);
 	}
 
 	public static List<String> getAllSubsStringList(String str) {
@@ -31,7 +39,7 @@ public class SubsString {
 		for (int i = 0; i < n; i++) {
 			for (int j = i + 1; j <= n; j++) {
 				l.add(str.substring(i, j));
-				//System.out.println(str.substring(i, j));
+				// System.out.println(str.substring(i, j));
 			}
 		}
 
