@@ -11,13 +11,9 @@ public class LargestHistogramArea {
 
 		// prevSmaller(hist);
 
-		getMaxArea(hist);
+		// getMaxArea(hist);
+		System.out.println(largestArea2(hist));
 
-	}
-
-	public static int largestArea(int hist[]) {
-
-		return 0;
 	}
 
 	public static int[] nextSmaller(int hist[]) {
@@ -78,6 +74,30 @@ public class LargestHistogramArea {
 		}
 
 		return prevS;
+	}
+
+	private static int largestArea2(int[] arr) {
+		int n = arr.length;
+		int res = 0;
+		for (int i = 0; i < n; i++) {
+
+			int curr = arr[i];
+			int j = i - 1;
+
+			while (j >= 0 && arr[j] >= arr[i]) {
+				curr = curr + arr[i];
+				j--;
+			}
+
+			j = i + 1;
+			while (j < n && arr[j] >= arr[i]) {
+				curr = curr + arr[i];
+				j++;
+			}
+			res = Math.max(curr, res);
+		}
+
+		return res;
 	}
 
 	private static int getMaxArea(int[] hist) {
