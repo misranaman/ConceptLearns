@@ -1,4 +1,4 @@
-package interview_asks.companies;
+package interview_asks.companies.daffodil;
 
 public class StockSellAndBuy {
 

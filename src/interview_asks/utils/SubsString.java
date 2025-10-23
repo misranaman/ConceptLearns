@@ -1,4 +1,4 @@
-package interview_asks.companies;
+package interview_asks.utils;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -12,7 +12,7 @@ public class LongestCommonPrefix {
 
         String prefix = strArr[0];
 
-        int x = "string".indexOf("ri");
+        int x = "string".indexOf("t"); // index of will return the position of substring here for t it will return 1 for st 0
 
         for (int i = 1; i < strArr.length; i++) {
             while (strArr[i].indexOf(prefix) != 0) {

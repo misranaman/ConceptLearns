@@ -1,4 +1,4 @@
-package interview_asks.companies;
+package interview_asks.companies.zepto;
 
 import java.util.ArrayList;
 import java.util.Arrays;
