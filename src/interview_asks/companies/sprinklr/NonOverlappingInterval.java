@@ -15,6 +15,7 @@ public class NonOverlappingInterval {
         int c = 0;
         Arrays.sort(arr, (a, b) -> a[0] - b[0]);
         System.out.println("sorted array:");
+        //printing sorted array
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(arr[i][j] + " ");
