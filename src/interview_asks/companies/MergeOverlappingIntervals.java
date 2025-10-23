@@ -17,7 +17,7 @@ public class MergeOverlappingIntervals {
 
 		System.out.println("------result-----");
 
-		for (int x[] : resList) {
+		for (int[] x : resList) {
 			System.out.println();
 			for (int i : x) {
 				System.out.print(i + " , ");
