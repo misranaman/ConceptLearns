@@ -1,7 +1,5 @@
 package object_sorting;
 
-import java.util.Comparator;
-
 public class Student implements Comparable<Student> {
     private String name;
     private String address;
