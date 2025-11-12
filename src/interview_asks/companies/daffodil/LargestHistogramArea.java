@@ -1,5 +1,6 @@
 package interview_asks.companies.daffodil;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 public class LargestHistogramArea {
@@ -48,10 +49,8 @@ public class LargestHistogramArea {
 	public static int[] prevSmaller(int hist[]) {
 
 		int n = hist.length;
-		int prevS[] = new int[n];
-		for (int i = 0; i < n; i++) {
-			prevS[i] = -1;
-		}
+		int[] prevS = new int[n];
+        Arrays.fill(prevS, -1);
 
 		Stack<Integer> st = new Stack<>();
 		for (int i = 0; i < n; i++) {
