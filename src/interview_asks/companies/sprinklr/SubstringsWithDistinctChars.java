@@ -1,7 +1,5 @@
 package interview_asks.companies.sprinklr;
 
-import inhert.A;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
