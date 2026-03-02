@@ -1,7 +1,5 @@
 package interview_asks.common;
 
-import inhert.A;
-
 import java.util.*;
 
 public class GroupAnagrams {
@@ -11,7 +9,7 @@ public class GroupAnagrams {
         String[] arr = {"eat", "tea", "tan", "ate", "nat", "bat"};
 
         //groupAnagrams(arr);
-        groupAnagramsTbd(arr);
+        //groupAnagramsTbd(arr);
     }
 
     private static void groupAnagrams(String[] arr) {
@@ -39,30 +37,5 @@ public class GroupAnagrams {
         }
 
         System.out.println("groupAnagrams = " + result);
-    }
-
-    private static void groupAnagramsTbd(String[] arr) {
-        int n = arr.length;
-        List<List<String>> res = new ArrayList<>();
-        Set<String> set = new HashSet<>();
-        for (String s : arr) {
-            char[] c = s.toCharArray();
-            Arrays.sort(c);
-            set.add(new String(c));
-        }
-
-        for (String s : set) {
-            List<String> temp = new ArrayList<>();
-            for (String item : arr) {
-                char[] iArr = item.toCharArray();
-                Arrays.sort(iArr);
-                if (new String(iArr).equals(s)) {
-                    temp.add(item);
-                }
-            }
-            res.add(temp);
-        }
-
-        System.out.println(res);
     }
 }
