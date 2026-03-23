@@ -2,7 +2,6 @@ package interview_asks.companies.greyorange;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
@@ -41,14 +40,18 @@ public class CheckLinksIn {
         }
     }
 
-    private static void checkLinks(String str) throws IOException {
-        URL url = new URL(str);
+    private static void checkLinks(String link) throws IOException {
+        URL url = new URL(link);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("HEAD");
-        int rc = connection.getResponseCode();
-        if(rc==HttpURLConnection.HTTP_OK){
-            System.out.println("Correct");
-        }else{
+        connection.setConnectTimeout(5000);
+        connection.setReadTimeout(5000);
+        int responseCode = connection.getResponseCode();
+
+        if (responseCode >= HttpURLConnection.HTTP_OK && responseCode <= HttpURLConnection.HTTP_BAD_REQUEST) {
+            System.out.println("✅:" + link);
+        } else {
+            System.out.println("❌:" + link);
         }
     }
 }

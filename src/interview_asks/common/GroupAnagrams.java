@@ -9,7 +9,7 @@ public class GroupAnagrams {
         String[] arr = {"eat", "tea", "tan", "ate", "nat", "bat"};
 
         //groupAnagrams(arr);
-        //groupAnagramsTbd(arr);
+        groupAnagramsTbd(arr);
     }
 
     private static void groupAnagrams(String[] arr) {
@@ -37,5 +37,29 @@ public class GroupAnagrams {
         }
 
         System.out.println("groupAnagrams = " + result);
+    }
+
+    private static void groupAnagramsTbd(String[] arr) {
+        int n = arr.length;
+        Set<String> set = new HashSet<>();
+        List<List<String>> res = new ArrayList<>();
+        for (String string : arr) {
+            char[] cArr = string.toCharArray();
+            Arrays.sort(cArr);
+            set.add(new String(cArr));
+        }
+
+        for (String s : set) {
+            List<String> temp = new ArrayList<>();
+            for (String str : arr) {
+                char[] sArr = str.toCharArray();
+                Arrays.sort(sArr);
+                if (s.equals(new String(sArr))){
+                    temp.add(str);
+                }
+            }
+            res.add(temp);
+        }
+        System.out.println("groupAnagrams = " + res);
     }
 }
